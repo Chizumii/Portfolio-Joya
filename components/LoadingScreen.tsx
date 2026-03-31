@@ -2,74 +2,93 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import '../src/styles/LoadingScreen.css';
 
-// 1. Definisikan tipe props-nya di sini
 interface LoadingScreenProps {
-  onFinish?: () => void; // Artinya: onFinish adalah fungsi yang tidak mengembalikan apa-apa (void)
+  onFinish?: () => void;
 }
 
-// 2. Terapkan tipe tersebut ke function
 export default function LoadingScreen({ onFinish }: LoadingScreenProps) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setProgress((prevProgress) => {
-        if (prevProgress >= 100) {
+      setProgress((prev) => {
+        if (prev >= 100) {
           clearInterval(interval);
-          if (onFinish) onFinish(); 
+          if (onFinish) onFinish();
           return 100;
         }
-        return prevProgress + 0.5;
+        return prev + 0.3;
       });
-    }, 30);
+    }, 16);
 
     return () => clearInterval(interval);
   }, [onFinish]);
 
-  const backgroundGradient = `linear-gradient(180deg, #b35aae 0%, #2c2c42 53.4673%, #151129 89.5478%)`;
-
   return (
-    <div 
-      className="flex flex-col items-center justify-center min-h-screen"
-      style={{ backgroundImage: backgroundGradient }}
-    >
-      <style>{`
-        @keyframes starGlow {
-          0%, 100% { 
-            filter: 
-              drop-shadow(0 0 35px rgba(255, 255, 255, 0.4)); 
-          }
-          30%, 70% { 
-            filter: 
-              drop-shadow(0 0 40px rgba(255, 255, 255, 0.7)); 
-          }
-        }
-        .glow-active {
-          animation: starGlow 5s ease-in-out infinite;
-        }
-      `}</style>
+    <div className="loadingScreen">
 
-      <div className="relative w-64 h-64 md:w-80 md:h-80 glow-active">
-        <Image
-          src="/assets/Star Blank.png"
-          alt="Loading Background"
-          fill
-          className="object-contain"
-          priority
-        />
+      {/* --- DEKORASI KIRI ATAS --- */}
+      <div className="decorLayer">
+        <div className="decorItem dekorKiriAtas1"><Image src="/assets/kiri atas 1 kecil.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="decorItem dekorKiriAtas2"><Image src="/assets/kiri atas 2 besar.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="decorItem dekorKiriAtas3"><Image src="/assets/kiri atas 3 kecil.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="decorItem dekorKiriAtas4"><Image src="/assets/kiri atas 4 sedang.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="decorItem dekorKiriAtas5"><Image src="/assets/kiri atas 5 kecil.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="decorItem dekorKiriAtas6"><Image src="/assets/kiri atas 6 besar.svg" alt="decor" fill className="object-contain" priority /></div>
+      </div>
 
-        <Image
-          src="/assets/Star Colored.png"
-          alt="Loading Progress"
-          fill
-          className="object-contain"
-          priority
-          style={{
-            WebkitMaskImage: `linear-gradient(to top, black ${progress - 15}%, transparent ${progress + 5}%)`,
-            maskImage: `linear-gradient(to top, black ${progress - 15}%, transparent ${progress + 5}%)`,
-          }}
-        />
+      {/* --- DEKORASI KANAN ATAS --- */}
+      <div className="decorLayer">
+        <div className="decorItem dekorKananAtas1"><Image src="/assets/kanan atas 1 kecil.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="decorItem dekorKananAtas2"><Image src="/assets/kanan atas 2 besar.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="decorItem dekorKananAtas3"><Image src="/assets/kanan atas 3 sedang.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="decorItem dekorKananAtas4"><Image src="/assets/kanan atas 4 besar.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="decorItem dekorKananAtas5"><Image src="/assets/kanan atas 5 kecil.svg" alt="decor" fill className="object-contain" priority /></div>
+      </div>
+
+      {/* --- DEKORASI KIRI BAWAH --- */}
+      <div className="decorLayer">
+        <div className="abslt bungaNoBolong1"><Image src="/assets/bunga no bolong.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt awanKiri"><Image src="/assets/awan kiri.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt bungaIsi3a"><Image src="/assets/bunga isi 3.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt bungaIsi1a"><Image src="/assets/bunga isi 1.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt bungaIsi3b"><Image src="/assets/bunga isi 3.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt bungaIsi1b"><Image src="/assets/bunga isi 1.svg" alt="decor" fill className="object-contain" priority /></div>
+      </div>
+
+      {/* --- DEKORASI KANAN BAWAH --- */}
+      <div className="decorLayer">
+        <div className="abslt awanKanan"><Image src="/assets/awan kanan.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt bungaIsi3c"><Image src="/assets/bunga isi 3.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt bungaNoBolong2"><Image src="/assets/bunga no bolong.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt bungaIsi1c"><Image src="/assets/bunga isi 1.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt bungaNoBolong3"><Image src="/assets/bunga no bolong.svg" alt="decor" fill className="object-contain" priority /></div>
+        <div className="abslt bungaIsi3d"><Image src="/assets/bunga isi 3.svg" alt="decor" fill className="object-contain" priority /></div>
+      </div>
+
+      {/* --- AREA TENGAH --- */}
+      <div className="centerArea">
+        <div className="outerRing"><Image src="/assets/outerring.png" alt="Outer" fill className="object-contain" priority /></div>
+        <div className="manyStar"><Image src="/assets/manystar.png" alt="Middle" fill className="object-contain" priority /></div>
+        <div className="outerInnerRing"><Image src="/assets/outerinering.png" alt="Inner" fill className="object-contain" priority /></div>
+        <div className="innerRing"><Image src="/assets/inerring.png" alt="Inner2" fill className="object-contain" priority /></div>
+        <div className="bubble"><Image src="/assets/bubble.png" alt="Bubble" fill className="object-contain" priority /></div>
+
+        <div className="starProgress">
+          <div className="starBlank"><Image src="/assets/Star Blank.png" alt="Star Base" fill className="object-contain opacity-20" priority /></div>
+          <div 
+            className="starColored"
+            style={{
+              WebkitMaskImage: `linear-gradient(to top, black ${progress - 10}%, rgba(0,0,0,0.5) ${progress}%, transparent ${progress + 10}%)`,
+              maskImage: `linear-gradient(to top, black ${progress - 10}%, rgba(0,0,0,0.5) ${progress}%, transparent ${progress + 10}%)`,
+              opacity: progress > 0 ? 1 : 0
+            }}
+          >
+            <Image src="/assets/Star Colored.png" alt="Star Colored" fill className="object-contain" priority />
+          </div>
+        </div>
       </div>
     </div>
   );

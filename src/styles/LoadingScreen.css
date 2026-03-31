@@ -1,0 +1,737 @@
+/* ── KEYFRAMES ─────────────────────────────────────────────── */
+
+@keyframes starGlow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.4));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.6));
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes rotateRight {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ── ROOT WRAPPER ───────────────────────────────────────────── */
+
+.loadingScreen {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.decorLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.decorItem {
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+}
+
+.abslt {
+    position: absolute;
+}
+
+/* ── KIRI ATAS ─────────────────────────────────────────────── */
+
+.dekorKiriAtas1 {
+    top: 40px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+}
+
+.dekorKiriAtas2 {
+    top: 190px;
+    left: 75px;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0.5s;
+}
+
+.dekorKiriAtas3 {
+    top: 360px;
+    left: 170px;
+    width: 60px;
+    height: 60px;
+    animation-delay: 1s;
+}
+
+.dekorKiriAtas4 {
+    top: 100px;
+    left: 190px;
+    width: 80px;
+    height: 80px;
+    animation-delay: 1.5s;
+}
+
+.dekorKiriAtas5 {
+    top: 140px;
+    left: 300px;
+    width: 60px;
+    height: 60px;
+    animation-delay: 2s;
+}
+
+.dekorKiriAtas6 {
+    top: 20px;
+    left: 370px;
+    width: 100px;
+    height: 100px;
+    animation-delay: 1.5s;
+}
+
+/* ── KANAN ATAS ────────────────────────────────────────────── */
+
+.dekorKananAtas1 {
+    top: 310px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+}
+
+.dekorKananAtas2 {
+    top: 40px;
+    right: 70px;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0.5s;
+}
+
+.dekorKananAtas3 {
+    top: 210px;
+    right: 170px;
+    width: 70px;
+    height: 70px;
+    animation-delay: 1s;
+}
+
+.dekorKananAtas4 {
+    top: 90px;
+    right: 270px;
+    width: 100px;
+    height: 100px;
+    animation-delay: 1.5s;
+}
+
+.dekorKananAtas5 {
+    top: 30px;
+    right: 410px;
+    width: 60px;
+    height: 60px;
+    animation-delay: 2s;
+}
+
+/* ── KIRI BAWAH ────────────────────────────────────────────── */
+
+.bungaNoBolong1 {
+    bottom: 25px;
+    right: 1180px;
+    width: 200px;
+    height: 200px;
+}
+
+.awanKiri {
+    top: 15px;
+    right: 530px;
+    width: 1000px;
+    height: 1000px;
+}
+
+.bungaIsi3a {
+    top: 310px;
+    right: 1270px;
+    width: 260px;
+    height: 260px;
+}
+
+.bungaIsi1a {
+    top: 520px;
+    right: 1260px;
+    width: 170px;
+    height: 170px;
+}
+
+.bungaIsi3b {
+    bottom: 25px;
+    right: 1120px;
+    width: 150px;
+    height: 150px;
+}
+
+.bungaIsi1b {
+    top: 430px;
+    right: 1030px;
+    width: 230px;
+    height: 230px;
+}
+
+/* ── KANAN BAWAH ───────────────────────────────────────────── */
+
+.awanKanan {
+    top: 50px;
+    left: 830px;
+    width: 1000px;
+    height: 1000px;
+    animation-delay: 2s;
+}
+
+.bungaIsi3c {
+    top: 540px;
+    left: 1015px;
+    width: 170px;
+    height: 170px;
+}
+
+.bungaNoBolong2 {
+    bottom: 0px;
+    left: 1040px;
+    width: 200px;
+    height: 200px;
+}
+
+.bungaIsi1c {
+    top: 420px;
+    left: 1090px;
+    width: 220px;
+    height: 220px;
+}
+
+.bungaNoBolong3 {
+    top: 480px;
+    left: 1200px;
+    width: 200px;
+    height: 200px;
+}
+
+.bungaIsi3d {
+    top: 310px;
+    left: 1270px;
+    width: 260px;
+    height: 260px;
+}
+
+/* ── CENTER AREA ────────────────────────────────────────────── */
+
+.centerArea {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.outerRing {
+    position: absolute;
+    width: 1480px;
+    height: 1480px;
+    animation: rotateRight 100s linear infinite;
+}
+
+.manyStar {
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    animation: rotateRight 60s linear infinite;
+}
+
+.outerInnerRing {
+    position: absolute;
+    width: 740px;
+    height: 740px;
+    animation: rotateRight 30s linear infinite;
+}
+
+.innerRing {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    animation: rotateRight 60s linear infinite;
+}
+
+.bubble {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+}
+
+/* ── STAR PROGRESS ──────────────────────────────────────────── */
+
+.starProgress {
+    position: relative;
+    width: 192px;
+    height: 192px;
+    animation: starGlow 5s ease-in-out infinite;
+    z-index: 20;
+    pointer-events: auto;
+}
+
+.starBlank {
+    position: absolute;
+    inset: 0;
+}
+
+.starColored {
+    position: absolute;
+    inset: 0;
+    transition: opacity 0.5s ease-in, -webkit-mask-image 0.1s linear;
+}
+
+
+@media (max-width: 1440px) and (max-height: 675px) {
+
+    .outerRing {
+        width: 1480px;
+        height: 1480px;
+    }
+
+    .midRing {
+        width: 1200px;
+        height: 1200px;
+    }
+
+    .innerRingFast {
+        width: 740px;
+        height: 740px;
+    }
+
+    .innerRingSlow {
+        width: 650px;
+        height: 650px;
+    }
+
+    .bubble {
+        width: 550px;
+        height: 550px;
+    }
+
+    .awanKiri {
+        top: 15px;
+        right: 530px;
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .awanKanan {
+        top: 50px;
+        left: 830px;
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .bungaNoBolong1 {
+        bottom: 25px;
+        right: 1180px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .bungaIsi3a {
+        top: 310px;
+        right: 1270px;
+        width: 260px;
+        height: 260px;
+    }
+
+    .bungaIsi1a {
+        top: 520px;
+        right: 1260px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .bungaIsi3b {
+        bottom: 25px;
+        right: 1120px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .bungaIsi1b {
+        top: 430px;
+        right: 1030px;
+        width: 230px;
+        height: 230px;
+    }
+
+    .bungaIsi3c {
+        top: 540px;
+        left: 1015px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .bungaNoBolong2 {
+        bottom: 0px;
+        left: 1040px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .bungaIsi1c {
+        top: 420px;
+        left: 1090px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .bungaNoBolong3 {
+        top: 480px;
+        left: 1200px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .bungaIsi3d {
+        top: 310px;
+        left: 1270px;
+        width: 260px;
+        height: 260px;
+    }
+
+    .dekorKiriAtas1 {
+        top: 40px;
+        left: 25px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dekorKiriAtas2 {
+        top: 190px;
+        left: 75px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .dekorKiriAtas3 {
+        top: 360px;
+        left: 170px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dekorKiriAtas4 {
+        top: 100px;
+        left: 190px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .dekorKiriAtas5 {
+        top: 140px;
+        left: 300px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dekorKiriAtas6 {
+        top: 20px;
+        left: 370px;
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .dekorKananAtas1 {
+        top: 250px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dekorKananAtas2 {
+        top: 40px;
+        right: 70px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .dekorKananAtas3 {
+        top: 190px;
+        right: 170px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .dekorKananAtas4 {
+        top: 90px;
+        right: 270px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .dekorKananAtas5 {
+        top: 30px;
+        right: 410px;
+        width: 60px;
+        height: 60px;
+    }
+
+
+}
+
+
+@media (max-width: 1536px) and (max-height: 730px) {
+
+    .starProgress {
+        position: relative;
+        width: 280px;
+        height: 280px;
+        animation: starGlow 5s ease-in-out infinite;
+        z-index: 20;
+        pointer-events: auto;
+    }
+
+    .starBlank {
+        position: absolute;
+        inset: 0;
+    }
+
+    .starColored {
+        position: absolute;
+        inset: 0;
+        transition: opacity 0.5s ease-in, -webkit-mask-image 0.1s linear;
+    }
+
+    .loadingScreen {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .outerRing {
+        width: 1600px;
+        height: 1600px;
+    }
+
+    .manyStar {
+        position: absolute;
+        width: 1320px;
+        height: 1320px;
+    }
+
+    .outerInnerRing {
+        position: absolute;
+        width: 760px;
+        height: 760px;
+    }
+
+    .innerRing {
+        position: absolute;
+        width: 680px;
+        height: 680px;
+    }
+
+
+    .bubble {
+        width: 560px;
+        height: 560px;
+    }
+
+    .awanKiri {
+        top: 65px;
+        right: 625px;
+        width: 1000px;
+        height: 1000px;
+    }
+
+
+    .awanKanan {
+        top: 100px;
+        left: 920px;
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .bungaNoBolong1 {
+        bottom: 25px;
+        right: 1280px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .bungaIsi3a {
+        top: 340px;
+        right: 1350px;
+        width: 280px;
+        height: 280px;
+    }
+
+    .bungaIsi1a {
+        top: 577px;
+        right: 1360px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .bungaIsi3b {
+        bottom: 37px;
+        right: 1220px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .bungaIsi1b {
+        top: 470px;
+        right: 1130px;
+        width: 230px;
+        height: 230px;
+    }
+
+    .bungaIsi3c {
+        top: 588px;
+        left: 1120px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .bungaNoBolong2 {
+        top: 535px;
+        left: 1140px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .bungaIsi1c {
+        top: 470px;
+        left: 1190px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .bungaNoBolong3 {
+        top: 552px;
+        left: 1280px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .bungaIsi3d {
+        top: 385px;
+        left: 1350px;
+        width: 260px;
+        height: 260px;
+    }
+
+    .dekorKiriAtas1 {
+        top: 40px;
+        left: 25px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dekorKiriAtas2 {
+        top: 190px;
+        left: 75px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .dekorKiriAtas3 {
+        top: 360px;
+        left: 170px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dekorKiriAtas4 {
+        top: 100px;
+        left: 190px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .dekorKiriAtas5 {
+        top: 140px;
+        left: 300px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dekorKiriAtas6 {
+        top: 20px;
+        left: 370px;
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .dekorKananAtas1 {
+        top: 250px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dekorKananAtas2 {
+        top: 40px;
+        right: 70px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .dekorKananAtas3 {
+        top: 190px;
+        right: 170px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .dekorKananAtas4 {
+        top: 90px;
+        right: 270px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .dekorKananAtas5 {
+        top: 30px;
+        right: 410px;
+        width: 60px;
+        height: 60px;
+    }
+
+}

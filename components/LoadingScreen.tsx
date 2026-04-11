@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import '../src/styles/LoadingScreen.css';
 
+
 interface LoadingScreenProps {
   onFinish?: () => void;
 }
@@ -27,7 +28,9 @@ export default function LoadingScreen({ onFinish }: LoadingScreenProps) {
   }, [onFinish]);
 
   return (
-    <div className="loadingScreen">
+    <div className="loadingScreen" style={{
+        background: 'linear-gradient(180deg, #b35aae 0%, #2c2c42 53.4673%, #151129 89.5478%)'
+      }} >
 
       {/* --- DEKORASI KIRI ATAS --- */}
       <div className="decorLayer">
@@ -75,10 +78,9 @@ export default function LoadingScreen({ onFinish }: LoadingScreenProps) {
         <div className="outerInnerRing"><Image src="/assets/outerinering.png" alt="Inner" fill className="object-contain" priority /></div>
         <div className="innerRing"><Image src="/assets/inerring.png" alt="Inner2" fill className="object-contain" priority /></div>
         <div className="bubble"><Image src="/assets/bubble.png" alt="Bubble" fill className="object-contain" priority /></div>
-
         <div className="starProgress">
           <div className="starBlank"><Image src="/assets/Star Blank.png" alt="Star Base" fill className="object-contain opacity-20" priority /></div>
-          <div 
+          <div
             className="starColored"
             style={{
               WebkitMaskImage: `linear-gradient(to top, black ${progress - 10}%, rgba(0,0,0,0.5) ${progress}%, transparent ${progress + 10}%)`,
@@ -89,6 +91,7 @@ export default function LoadingScreen({ onFinish }: LoadingScreenProps) {
             <Image src="/assets/Star Colored.png" alt="Star Colored" fill className="object-contain" priority />
           </div>
         </div>
+
       </div>
     </div>
   );

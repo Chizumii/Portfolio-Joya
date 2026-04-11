@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417.75 64.94">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #fff8e9;
+        mix-blend-mode: overlay;
+        opacity: .28;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="front_page" data-name="front page">
+        <rect class="cls-2" x="0" y="0" width="417.75" height="64.94" rx="29.62" ry="29.62"/>
+      </g>
+    </g>
+  </g>
+</svg>

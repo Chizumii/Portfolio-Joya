@@ -1,15 +1,38 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import '../src/styles/LoadingScreen.css';
+import '../src/styles/Navbar.css';
+import CustomCursor from '@/components/CustomCursor';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+// 1. Setup Vend Sans (Variable Font)
+const vendSans = localFont({
+  src: './fonts/Vend_Sans/VendSans_VariableFont_wght.ttf',
+  variable: '--font-vend-sans',
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// 2. Setup Libre Caslon Text (Static Fonts)
+const libreCaslon = localFont({
+  src: [
+    {
+      path: './fonts/Libre_Caslon_Text/LibreCaslonText_Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Libre_Caslon_Text/LibreCaslonText_Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Libre_Caslon_Text/LibreCaslonText_Italic.ttf',
+      weight: '400',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-libre-caslon',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -28,8 +51,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // Inject both font variables into the body
+        className={`${vendSans.variable} ${libreCaslon.variable} antialiased`}
       >
+        <CustomCursor />
         {children}
       </body>
     </html>

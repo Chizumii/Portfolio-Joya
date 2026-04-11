@@ -1,0 +1,257 @@
+/* ─── AvatarCarousel / testing.css ──────────────────────────────────────── */
+
+/* Base node */
+.ac-node {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    will-change: left, top, width, height, opacity, transform;
+    transition:
+        left 0.48s cubic-bezier(0.4, 0, 0.2, 1),
+        top 0.48s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.48s cubic-bezier(0.4, 0, 0.2, 1),
+        height 0.48s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.40s cubic-bezier(0.4, 0, 0.2, 1),
+        margin 0.48s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.42s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Animations */
+@keyframes ac-exit-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-36px) scale(0.72);
+    }
+}
+
+@keyframes ac-enter-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-36px) scale(0.72);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.ac-node.ac-exit-up {
+    animation: ac-exit-up 0.30s ease-in forwards;
+    pointer-events: none;
+}
+
+.ac-node.ac-enter-down {
+    animation: ac-enter-down 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Inner circle — transparent, clips avatar photo to circle */
+.ac-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    user-select: none;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Disable circle clipping for pop-out effect on active node */
+.ac-node.ac-node--active .ac-inner {
+    overflow: visible;
+}
+
+/* Avatar Image default (inactive) */
+.ac-avatar-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* Avatar Image pop-out (when active) */
+.ac-node.ac-node--active .ac-avatar-img {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    max-width: none;
+}
+
+.ac-label {
+    color: #fff;
+    font-weight: 500;
+    transition: font-size 0.48s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Pagination dots */
+.ac-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1.5px solid #888;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.ac-dot.ac-dot--selected {
+    background: gold;
+    border-color: gold;
+}
+
+/* ─── Layout wrapper ─────────────────────────────────────────────────────── */
+
+.ac-layout {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* ─── Info Card ──────────────────────────────────────────────────────────── */
+
+@keyframes card-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-12px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.ac-card {
+    position: absolute;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.18s ease;
+}
+
+.ac-card.ac-card--visible {
+    opacity: 1;
+    pointer-events: auto;
+    animation: card-in 0.38s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.ac-card__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.ac-card-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ac-card__body {
+    padding: 10px 12px 12px;
+}
+
+.ac-card__name {
+    margin: 0 0 2px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+}
+
+.ac-card__id {
+    margin: 0 0 2px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.ac-card__color {
+    margin: 0;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: monospace;
+    letter-spacing: 0.06em;
+}
+
+/* ─── Full Avatar Image (cardImageUrl) ──────────────────────────────────── */
+
+@keyframes avatarfull-in {
+    0% {
+        opacity: 0;
+        transform: translateY(12px) scale(0.96);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.framePFP {
+    z-index: 2;
+    pointer-events: none;
+}
+
+.framePFP span {
+    position: absolute !important;
+    inset: 0;
+}
+
+.avatarfull {
+    position: absolute;
+
+    top: var(--avatarfull-top, 0px);
+    right: var(--avatarfull-right, 0px);
+    bottom: var(--avatarfull-bottom, auto);
+    left: var(--avatarfull-left, 500px);
+
+    width: var(--avatarfull-width, 320px);
+    height: var(--avatarfull-height, 320px); /* Ketinggian default */
+
+    /* 🔥 BUAT JADI TRANSPARAN AGAR GAMBAR LATAR BELAKANG TERLIHAT (BARU) */
+    background: transparent;
+    border: none;
+    overflow: visible;
+
+    z-index: var(--avatarfull-z, 20);
+
+    pointer-events: none;
+}
+
+.avatarfull-img {
+    z-index: 1;
+}
+
+/* 🔥 STYLE UNTUK BACKGROUND IMAGE (BARU) */
+.avatarfull-bg-img {
+    z-index: 0;
+    position: absolute;
+    object-fit: contain;
+    pointer-events: none;
+}

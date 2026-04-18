@@ -3,19 +3,21 @@
 import { useState, useEffect } from 'react';
 import LoadingScreen from '@/components/LoadingScreen';
 import AboutPage from '@/components/Aboutpage';
-import NoRulesDetail from '@/components/Norulesdetail';
-import SingkingDetail from '@/components/Sinkingthoughtdetail';
-import Fleurchar from '@/components/Norulesfleur';
-import Liuxchar from '@/components/Norulesliux';
-import Mira from '@/components/Mira';
-import Axel from '@/components/Axel';
-import Intan from '@/components/Intan';
-import HwangEunchae from '@/components/HwangEunchae';
-import KimHaerin from '@/components/Kimhaerin';
-import ChoSeoYeon from '@/components/Choseoyeon';
-import Leejia from '@/components/Leejia';
-import FifthSense from '@/components/Fifthsense';
-import Yejin from '@/components/Yejin';
+import NoRulesDetail from '@/components/norules/Norulesdetail';
+import SingkingDetail from '@/components/sinkingthought/Sinkingthoughtdetail';
+import Fleurchar from '@/components/norules/Norulesfleur';
+import Liuxchar from '@/components/norules/Norulesliux';
+import Mira from '@/components/sinkingthought/Mira';
+import Axel from '@/components/sinkingthought/Axel';
+import Intan from '@/components/sinkingthought/Intan';
+import HwangEunchae from '@/components/fifthsense/HwangEunchae';
+import KimHaerin from '@/components/fifthsense/Kimhaerin';
+import ChoSeoYeon from '@/components/fifthsense/Choseoyeon';
+import Leejia from '@/components/fifthsense/Leejia';
+import FifthSense from '@/components/fifthsense/Fifthsense';
+import Yejin from '@/components/fifthsense/Yejin';
+import Reset from '@/components/reset/Reset';
+import Alexander from '@/components/reset/Alexander';
 // import PersonalWorkDetail from '@/components/PersonalWorkDetail';
 
 export default function Home() {
@@ -55,11 +57,12 @@ export default function Home() {
           {activeHash === "#Choseoyeon" && <ChoSeoYeon />}
           {activeHash === "#Leejia" && <Leejia />}
           {activeHash === "#Yejin" && <Yejin />}
+          {activeHash === "#Reset" && <Reset />}
 
         </>
       )} */}
+      <Alexander/>
 
-      <FifthSense />
     </main>
   );
 }

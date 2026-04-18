@@ -1,3 +1,8 @@
+@keyframes float {
+    0%, 100% { transform: translateX(-50%) translateY(0px); }
+    50%       { transform: translateX(-50%) translateY(-10px); }
+}
+
 .backgroundSinking {
     position: absolute;
     inset: 0;
@@ -79,7 +84,7 @@
 
 .footerSinking {
     position: absolute;
-    top: 900px;
+    bottom: 0;
     width: 100%;
     height: auto;
     cursor: pointer;
@@ -230,6 +235,8 @@
     font-weight: 400;
     font-family: var(--font-vend-sans), sans-serif;
     letter-spacing: 1px;
+    width: 480px;
+    max-width: 480px;
 }
 
 .bgcharshinking1 {

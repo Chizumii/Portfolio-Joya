@@ -3,7 +3,7 @@
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import '../src/styles/AboutPage.css';
-import AvatarCarousel from './Testing';
+import AvatarCarousel from './CaruselHomePage';
 import FooterX from './Footer';
 
 export default function Aboutpage() {

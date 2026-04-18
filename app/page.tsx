@@ -18,6 +18,7 @@ import FifthSense from '@/components/fifthsense/Fifthsense';
 import Yejin from '@/components/fifthsense/Yejin';
 import Reset from '@/components/reset/Reset';
 import Alexander from '@/components/reset/Alexander';
+import System from '@/components/reset/System';
 // import PersonalWorkDetail from '@/components/PersonalWorkDetail';
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
 
   return (
     <main className="w-screen h-screen overflow-hidden z-30">
-      {/* {!showHomepage ? (
+      {!showHomepage ? (
         <LoadingScreen onFinish={() => {
           setTimeout(() => setShowHomepage(true), 200);
         }} />
@@ -58,10 +59,11 @@ export default function Home() {
           {activeHash === "#Leejia" && <Leejia />}
           {activeHash === "#Yejin" && <Yejin />}
           {activeHash === "#Reset" && <Reset />}
-
+          {activeHash === "#Alexander" && <Alexander />}
+          {activeHash === "#System" && <System />}
         </>
-      )} */}
-      <Alexander/>
+      )}
+
 
     </main>
   );

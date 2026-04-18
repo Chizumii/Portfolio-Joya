@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2348.94 1081.53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1174.47" y1="76.4" x2="1174.47" y2="1585.66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a7c9f2" stop-opacity="0"/>
+      <stop offset=".07" stop-color="#adccf1" stop-opacity=".05"/>
+      <stop offset=".2" stop-color="#bfd6ef" stop-opacity=".19"/>
+      <stop offset=".38" stop-color="#dce5ec" stop-opacity=".42"/>
+      <stop offset=".57" stop-color="#fff8e9" stop-opacity=".7"/>
+      <stop offset=".57" stop-color="#fdf7e9" stop-opacity=".71"/>
+      <stop offset=".69" stop-color="#d7e3ed" stop-opacity=".83"/>
+      <stop offset=".81" stop-color="#bcd4ef" stop-opacity=".93"/>
+      <stop offset=".91" stop-color="#acccf1" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#a7c9f2"/>
+    </linearGradient>
+  </defs>
+  <g id="front_page" data-name="front page">
+    <rect class="cls-1" width="2348.94" height="1081.53"/>
+  </g>
+</svg>

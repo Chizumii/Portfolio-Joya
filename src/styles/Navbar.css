@@ -1,4 +1,3 @@
-
 .navWrapper {
     position: absolute;
     width: 100%;
@@ -44,6 +43,9 @@
     border-radius: 4px;
     transition: color 0.3s ease;
     white-space: nowrap;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* ================================

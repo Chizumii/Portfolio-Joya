@@ -1,0 +1,378 @@
+.backgroundSinking {
+    position: absolute;
+    inset: 0;
+    top: -380px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1360px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.fifthsensetitle {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffc647;
+    top: 350px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-libre-caslon), serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+.awanSinking {
+    position: absolute;
+    top: 150px;
+    left: -120px;
+    width: 1750px;
+    height: auto;
+    z-index: 2;
+}
+
+.bungaSinking {
+    position: absolute;
+    top: 150px;
+    left: 800px;
+    width: 650px;
+    height: auto;
+    z-index: 10;
+}
+
+.titleSinking {
+    position: absolute;
+    top: 360px;
+    left: 200px;
+    width: 400px;
+    height: auto;
+    z-index: 15;
+}
+
+.Sinkingbungakiri {
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    left: 11%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 750px;
+}
+
+.water {
+    position: absolute;
+    z-index: 5;
+    width: 33px;
+    left: 6%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 923px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.Sinkingbungakanan {
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    left: 90%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1000px;
+}
+
+.poster {
+    position: absolute;
+    z-index: 5;
+    width: 650px;
+    left: 73%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1000px;
+}
+
+.bgsingkingtengah {
+    position: absolute;
+    z-index: 3;
+    width: 1360px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 650px;
+}
+
+.bgsingkingtengah2 {
+    position: absolute;
+    z-index: 3;
+    width: 1360px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1550px;
+}
+
+.shinkingdesc1 {
+    position: absolute;
+    left: 28%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 1120px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    letter-spacing: 1px;
+}
+
+.shinkingdesc2 {
+    position: absolute;
+    left: 29.3%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 1339px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    letter-spacing: 1px;
+}
+
+.shinkingdesc3 {
+    position: absolute;
+    left: 29.6%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 1600px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    letter-spacing: 1px;
+}
+
+.bgcharshinking1 {
+    position: absolute;
+    z-index: 3;
+    width: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2080px;
+    /* 1980 + 100 */
+}
+
+.waterdrop1 {
+    position: absolute;
+    z-index: 3;
+    width: 21px;
+    left: 21.3%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2143px;
+    /* 2043 + 100 */
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.waterdrop2 {
+    position: absolute;
+    z-index: 3;
+    width: 33px;
+    left: 19%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2210px;
+    /* 2110 + 100 */
+    animation: float 4s ease-in-out infinite;
+}
+
+.waterdrop3 {
+    position: absolute;
+    z-index: 3;
+    width: 33px;
+    left: 96%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2280px;
+    /* 2180 + 100 */
+    animation: float 4s ease-in-out infinite;
+}
+
+.waterdrop4 {
+    position: absolute;
+    z-index: 3;
+    width: 20px;
+    left: 90.4%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2360px;
+    /* 2260 + 100 */
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.waterdrop5 {
+    position: absolute;
+    z-index: 3;
+    width: 39px;
+    left: 4%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 3175px;
+    /* 3075 + 100 */
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.waterdrop6 {
+    position: absolute;
+    z-index: 3;
+    width: 30px;
+    left: 90.5%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 3330px;
+    /* 3230 + 100 */
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.bgcharshinking2 {
+    position: absolute;
+    z-index: 3;
+    width: 1360px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1900px;
+    /* 1800 + 100 */
+}
+
+.bgcharshinking3 {
+    position: absolute;
+    z-index: 3;
+    width: 1900px;
+    left: 48%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1900px;
+    /* 1800 + 100 */
+    opacity: 0.8;
+}
+
+.bgtitlesinkings5 {
+    position: absolute;
+    top: 1060px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+.bgtitlesinkings6 {
+    position: absolute;
+    top: 1280px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+.bgtitlesinkings7 {
+    position: absolute;
+    top: 1540px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+.bgtitlesinkings {
+    position: absolute;
+    top: 1900px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+.sinkingtls {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffc647;
+    top: 3px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-libre-caslon), serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+.bintangkuningtitlesingking {
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 23px;
+    height: auto;
+    z-index: 11;
+    pointer-events: none;
+}
+
+.bintangkuningtitleduasingking {
+    position: absolute;
+    left: 10%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 23px;
+    height: auto;
+    z-index: 12;
+    pointer-events: none;
+}
+
+.dekorasiabout {
+    position: absolute;
+    left: 50%;
+    top: 1800px;
+    transform: translateX(-50%);
+    width: 900px;
+    height: auto;
+    z-index: 12;
+    pointer-events: none;
+}
+
+.challangesdecsingking {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 1970px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.backgroundsingking {
+    position: absolute;
+    inset: 0;
+    top: 2850px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1360px;
+    height: auto;
+    z-index: 1;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.footerSinking {
+    position: absolute;
+    top: 700px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}

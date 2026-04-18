@@ -29,8 +29,9 @@ export default function LoadingScreen({ onFinish }: LoadingScreenProps) {
 
   return (
     <div className="loadingScreen" style={{
-        background: 'linear-gradient(180deg, #b35aae 0%, #2c2c42 53.4673%, #151129 89.5478%)'
-      }} >
+      background: 'linear-gradient(180deg, #B05CA4 -3%, #2c2c42 53.4673%, #16122a 89.5478%)'
+    }}
+    >
 
       {/* --- DEKORASI KIRI ATAS --- */}
       <div className="decorLayer">

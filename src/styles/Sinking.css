@@ -1,0 +1,475 @@
+.backgroundSinking {
+    position: absolute;
+    inset: 0;
+    top: -380px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1360px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.backbutton-fixed {
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    width: 60px;
+    height: auto;
+    z-index: 100;
+}
+
+.awanSinking {
+    position: absolute;
+    top: 150px;
+    left: -120px;
+    width: 1750px;
+    height: auto;
+    z-index: 2;
+}
+
+.bungaSinking {
+    position: absolute;
+    top: 150px;
+    left: 800px;
+    width: 650px;
+    height: auto;
+    z-index: 10;
+}
+
+.titleSinking {
+    position: absolute;
+    top: 360px;
+    left: 200px;
+    width: 400px;
+    height: auto;
+    z-index: 15;
+}
+
+.Sinkingbungakiri {
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    left: 11%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 750px;
+}
+
+.water {
+    position: absolute;
+    z-index: 5;
+    width: 33px;
+    left: 6%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 923px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.Sinkingbungakanan {
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    left: 90%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 900px;
+}
+
+.footerSinking {
+    position: absolute;
+    top: 900px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.bgsingkingtengah {
+    position: absolute;
+    z-index: 3;
+    width: 1900px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 650px;
+    opacity: 0.3;
+}
+
+.solutin {
+    position: absolute;
+    z-index: 3;
+    width: 1500px;
+    left: 66%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1000px;
+}
+
+.bgsolutin {
+    position: absolute;
+    z-index: 3;
+    width: 1900px;
+    left: 18%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 550px;
+}
+
+
+/* ═══════════════════════════════════════
+   COMIC PAGE CAROUSEL
+═══════════════════════════════════════ */
+
+.comicCarouselWrapper {
+    position: absolute;
+    z-index: 20;
+    top: 950px;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 960px;
+}
+
+.carouselRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.carouselNavBtn {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.15s ease, opacity 0.2s ease;
+    padding: 0;
+    z-index: 30;
+}
+
+.carouselNavBtn:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
+
+.carouselNavBtn:active {
+    transform: scale(0.93);
+}
+
+.carouselStage {
+    position: relative;
+    width: 560px;
+    height: 560px;
+    flex-shrink: 0;
+}
+
+.comicPage {
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    will-change: left, top, width, height, opacity, z-index;
+    transition:
+        left 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+        top 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+        height 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+        z-index 0s 0.32s;
+}
+
+.comicPage.instant {
+    transition: none !important;
+}
+
+.shinkingdesc1 {
+    position: absolute;
+    left: 29%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 1070px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    letter-spacing: 1px;
+}
+
+.shinkingdesc2 {
+    position: absolute;
+    left: 28.6%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 1370px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    letter-spacing: 1px;
+}
+
+.shinkingdesc3 {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 1630px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    letter-spacing: 1px;
+}
+
+.shinkingdesc4 {
+    position: absolute;
+    left: 73.5%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 1630px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    letter-spacing: 1px;
+}
+
+.bgcharshinking1 {
+    position: absolute;
+    z-index: 3;
+    width: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1980px;
+}
+
+.waterdrop1 {
+    position: absolute;
+    z-index: 3;
+    width: 21px;
+    left: 21.3%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2043px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.waterdrop2 {
+    position: absolute;
+    z-index: 3;
+    width: 33px;
+    left: 19%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2110px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.waterdrop3 {
+    position: absolute;
+    z-index: 3;
+    width: 33px;
+    left: 96%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2180px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.waterdrop4 {
+    position: absolute;
+    z-index: 3;
+    width: 20px;
+    left: 90.4%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2260px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.waterdrop5 {
+    position: absolute;
+    z-index: 3;
+    width: 39px;
+    left: 4%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 3075px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.waterdrop6 {
+    position: absolute;
+    z-index: 3;
+    width: 30px;
+    left: 90.5%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 3230px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+
+.bgcharshinking2 {
+    position: absolute;
+    z-index: 3;
+    width: 1360px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1800px;
+}
+
+.bgcharshinking3 {
+    position: absolute;
+    z-index: 3;
+    width: 1900px;
+    left: 48%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1800px;
+    opacity: 0.8;
+}
+
+
+/* ═══════════════════════════════════════
+   CHARACTER CAROUSEL
+   
+   .charCarousel  — wrapper utama (flex row: prev | stage | next)
+   .charStage     — area di mana 3 karakter duduk dengan posisi absolut
+                    Sesuaikan width & height dengan total lebar & tinggi
+                    layout 3 karakter kamu
+═══════════════════════════════════════ */
+
+.charCarousel {
+    position: absolute;
+    z-index: 20;
+    top: 2250px;
+    /* ← sesuaikan posisi vertikal di halaman */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.charStage {
+    position: relative;
+    /* 
+      Sesuaikan width & height dengan total area 3 karakter:
+      width  ≈ left karakter paling kanan + charWidth-nya
+      height ≈ top karakter paling atas + charHeight-nya
+    */
+    width: 820px;
+    height: 430px;
+    flex-shrink: 0;
+}
+
+
+.bgtitlesinking {
+    position: absolute;
+    top: 2200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+.bintangkuningtitlesingking {
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 23px;
+    height: auto;
+    z-index: 11;
+    pointer-events: none;
+}
+
+.bintangkuningtitleduasingking {
+    position: absolute;
+    left: 10%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 23px;
+    height: auto;
+    z-index: 12;
+    pointer-events: none;
+}
+
+.sinkingtl {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffc647;
+    top: 3px;
+    font-size: 24px;
+    font-weight: 400;
+    /* Ubah dari 600 ke 400 agar menggunakan font Regular */
+    font-family: var(--font-libre-caslon), serif;
+    /* Menggunakan Libre Caslon */
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.bgtitlesinkings {
+    position: absolute;
+    top: 3100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+.sinkingtls {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffc647;
+    top: 3px;
+    font-size: 24px;
+    font-weight: 400;
+    /* Ubah dari 600 ke 400 agar menggunakan font Regular */
+    font-family: var(--font-libre-caslon), serif;
+    /* Menggunakan Libre Caslon */
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+
+.backgroundsingking {
+    position: absolute;
+    inset: 0;
+    top: 3050px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1360px;
+    height: auto;
+    z-index: 1;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.challangesdecsingking {
+    position: absolute;
+    left: 200px;
+    color: #fff8e9;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3200px;
+    font-size: 18px;
+    font-weight: 400;
+    /* Memastikan font yang ditarik adalah Regular */
+    font-family: var(--font-vend-sans), sans-serif;
+    /* Menggunakan Vend Sans */
+    text-align: center;
+    letter-spacing: 1px;
+}

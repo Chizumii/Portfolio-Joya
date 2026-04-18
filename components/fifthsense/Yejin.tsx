@@ -159,7 +159,7 @@ export default function Yejin() {
                         priority
                     />
                 </div>
-                <div className="hwangfull">
+                <div className="hwangfull9">
                     <Image
                         src="/assets/yejinfull1.svg"
                         alt="hwang"

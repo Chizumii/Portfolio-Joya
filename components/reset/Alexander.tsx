@@ -158,7 +158,7 @@ export default function Alexander() {
                 </div>
 
 
-                <div className="footerReset">
+                <div className="footerResets">
                     <FooterX />
                 </div>
 

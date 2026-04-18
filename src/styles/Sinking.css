@@ -249,7 +249,7 @@
     top: 1980px;
 }
 
-.waterdrop1 {
+.waterdrop111 {
     position: absolute;
     z-index: 3;
     width: 21px;
@@ -260,7 +260,7 @@
     animation: float 4.5s ease-in-out infinite;
 }
 
-.waterdrop2 {
+.waterdrop222 {
     position: absolute;
     z-index: 3;
     width: 33px;
@@ -271,7 +271,7 @@
     animation: float 4s ease-in-out infinite;
 }
 
-.waterdrop3 {
+.waterdrop333 {
     position: absolute;
     z-index: 3;
     width: 33px;
@@ -282,7 +282,7 @@
     animation: float 4s ease-in-out infinite;
 }
 
-.waterdrop4 {
+.waterdrop444 {
     position: absolute;
     z-index: 3;
     width: 20px;
@@ -293,7 +293,7 @@
     animation: float 4.5s ease-in-out infinite;
 }
 
-.waterdrop5 {
+.waterdrop555 {
     position: absolute;
     z-index: 3;
     width: 39px;
@@ -304,7 +304,7 @@
     animation: float 4.5s ease-in-out infinite;
 }
 
-.waterdrop6 {
+.waterdrop666 {
     position: absolute;
     z-index: 3;
     width: 30px;

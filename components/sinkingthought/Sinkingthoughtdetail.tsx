@@ -478,27 +478,27 @@ export default function SinkingDetail() {
                     <Image src="/assets/singkingflower.svg" alt="bgchar" width={80} height={80}
                         style={{ width: '100%', height: 'auto' }} priority />
                 </div>
-                <div className="waterdrop1">
+                <div className="waterdrop111">
                     <Image src="/assets/tetesanair.svg" alt="bgchar" width={80} height={80}
                         style={{ width: '100%', height: 'auto' }} priority />
                 </div>
-                <div className="waterdrop2">
+                <div className="waterdrop222">
                     <Image src="/assets/tetesanair.svg" alt="bgchar" width={80} height={80}
                         style={{ width: '100%', height: 'auto' }} priority />
                 </div>
-                <div className="waterdrop3">
+                <div className="waterdrop333">
                     <Image src="/assets/tetesanair.svg" alt="bgchar" width={80} height={80}
                         style={{ width: '100%', height: 'auto' }} priority />
                 </div>
-                <div className="waterdrop4">
+                <div className="waterdrop444">
                     <Image src="/assets/tetesanair.svg" alt="bgchar" width={80} height={80}
                         style={{ width: '100%', height: 'auto' }} priority />
                 </div>
-                <div className="waterdrop5">
+                <div className="waterdrop555">
                     <Image src="/assets/tetesanair.svg" alt="bgchar" width={80} height={80}
                         style={{ width: '100%', height: 'auto' }} priority />
                 </div>
-                <div className="waterdrop6">
+                <div className="waterdrop666">
                     <Image src="/assets/tetesanair.svg" alt="bgchar" width={80} height={80}
                         style={{ width: '100%', height: 'auto' }} priority />
                 </div>

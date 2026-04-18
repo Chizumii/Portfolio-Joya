@@ -334,6 +334,18 @@
     letter-spacing: 1px;
 }
 
+.caruselFifthsense {
+    position: absolute;
+    inset: 0;
+    top: 2350px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: auto;
+    z-index: 80;
+    opacity: 0.6;
+}
+
 .backgroundsingkings {
     position: absolute;
     inset: 0;

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import '../../src/styles/fifthsense.css';
 import FooterX from '@/components/Footer';
 import { useRef, useState, useCallback, useEffect } from 'react';
+import CarouselFifthSense from '../CarouselFifthSense';
 
 export default function Fifthsense() {
     return (
@@ -164,7 +165,13 @@ export default function Fifthsense() {
                     <Image src="/assets/aboutdecoration.svg" alt="about" width={23} height={25} style={{ width: '100%', height: 'auto' }} />
                 </div>
                 <span className="challangesdecsingkings">The 4 seasons are friends that shares one dream with each other, they made a promise when they were in high school to stay together even when they went on their own separate ways. They dreamed of becoming models together since they were young and stayed close throughout their youth to adulthood. </span>
+                <div className="caruselFifthsense">
+                    <CarouselFifthSense
+                        prevButtonPosition={{ bottom: '150px', right: '310%' }}
+                        nextButtonPosition={{ bottom: '150px', left: '310%' }}
+                    />
 
+                </div>
                 <div className="backgroundsingkings">
                     <Image
                         src="/assets/bgbawahsinking.svg"

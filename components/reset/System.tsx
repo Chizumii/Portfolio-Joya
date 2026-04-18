@@ -114,10 +114,10 @@ export default function System() {
 
                 <div className="alexfull">
                     <Image
-                        src="/assets/systemfull.png "
+                        src="/assets/systemfull.png"
                         alt="fleurdetail"
-                        width={60}
-                        height={60}
+                        width={4060}
+                        height={4060}
                         style={{ width: '100%', height: 'auto' }}
                         priority
                     />
@@ -158,7 +158,7 @@ export default function System() {
                 </div>
 
 
-                <div className="footerReset">
+                <div className="footerResets">
                     <FooterX />
                 </div>
 

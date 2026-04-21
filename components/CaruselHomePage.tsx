@@ -403,6 +403,7 @@ export default function AvatarCarousel({
 
       const el = document.createElement('div');
       el.className = `ac-node ${isActive ? 'ac-node--active' : ''}`;
+      el.setAttribute('data-interactive', 'true');
 
       const inner = document.createElement('div');
       inner.className = 'ac-inner';
@@ -553,6 +554,7 @@ export default function AvatarCarousel({
           src={currentAvatar.cardImageUrl || currentAvatar.activeImageUrl}
           alt="Avatar Full"
           key={`img-${currentAvatar.id}`}
+          data-interactive={currentAvatar.anchorId ? 'true' : undefined}
           onClick={() => handleImageClick(currentAvatar.anchorId)}
           style={{
             position: 'absolute',

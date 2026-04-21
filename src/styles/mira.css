@@ -20,7 +20,7 @@
     z-index: 2;
 }
 
-.nextbutton{
+.nextbutton {
     position: absolute;
     top: 290px;
     left: 70%;
@@ -30,7 +30,7 @@
     z-index: 2;
 }
 
-.prevbutton{
+.prevbutton {
     position: absolute;
     top: 290px;
     left: 30%;
@@ -64,6 +64,7 @@
     pointer-events: none;
     animation: float 4s ease-in-out infinite;
 }
+
 .waterfall1 {
     position: absolute;
     inset: 0;
@@ -76,6 +77,7 @@
     pointer-events: none;
     animation: float 4.5s ease-in-out infinite;
 }
+
 .waterfall2 {
     position: absolute;
     inset: 0;
@@ -203,7 +205,7 @@
     pointer-events: none;
 }
 
-.mira{
+.mira {
     position: absolute;
     z-index: 5;
     left: 50%;
@@ -246,4 +248,276 @@
     /* Menggunakan Vend Sans */
     letter-spacing: 1px;
     text-align: center;
+}
+
+.full-height-mira {
+    height: 447vh;
+}
+
+.mira-content {
+    height: 447vh;
+    overflow: hidden;
+}
+
+@media (min-width: 1480px) {
+    .full-height-mira {
+        height: 420vh;
+    }
+
+    .mira-content {
+        height: 420vh;
+        overflow: hidden;
+    }
+
+    .backgrounmira {
+        position: absolute;
+        inset: 0;
+        top: -380px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1460px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .miraprofile {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        height: auto;
+        z-index: 2;
+    }
+
+    .nextbutton {
+        position: absolute;
+        top: 290px;
+        left: 70%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: auto;
+        z-index: 2;
+    }
+
+    .prevbutton {
+        position: absolute;
+        top: 290px;
+        left: 30%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: auto;
+        z-index: 2;
+    }
+
+    .bgcharmira {
+        position: absolute;
+        inset: 0;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1660px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .waterfall {
+        position: absolute;
+        inset: 0;
+        top: 610px;
+        left: 10.4%;
+        transform: translateX(-50%);
+        width: 42px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .waterfall1 {
+        position: absolute;
+        inset: 0;
+        top: 1710px;
+        left: 73.6%;
+        transform: translateX(-50%);
+        width: 25px;
+        height: auto;
+        z-index: 40;
+        pointer-events: none;
+        animation: float 4.5s ease-in-out infinite;
+    }
+
+    .waterfall2 {
+        position: absolute;
+        inset: 0;
+        top: 1890px;
+        left: 79.6%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .backbutton-fixed {
+        position: fixed;
+        top: 100px;
+        left: 30px;
+        width: 60px;
+        height: auto;
+        z-index: 100;
+        cursor: pointer;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .backbutton-fixed:hover {
+        transform: scale(1.1);
+    }
+
+    .miradetail {
+        position: absolute;
+        top: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2200px;
+        height: auto;
+        z-index: 2;
+    }
+
+    .mirafull {
+        position: absolute;
+        top: 2350px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1300px;
+        height: auto;
+    }
+
+    .footermira {
+        position: absolute;
+        top: -80px;
+        width: 100%;
+        height: auto;
+    }
+
+    .miratitle {
+        position: absolute;
+        top: 1975px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .bintangkuningtitle {
+        position: absolute;
+        left: 90%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 23px;
+        height: auto;
+        z-index: 11;
+        pointer-events: none;
+    }
+
+    .bintangkuningtitledua {
+        position: absolute;
+        left: 10%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 23px;
+        height: auto;
+        z-index: 12;
+        pointer-events: none;
+    }
+
+    .aboutmira {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffc647;
+        top: 3px;
+        font-size: 24px;
+        font-weight: 400;
+        /* Ubah dari 600 ke 400 agar menggunakan font Regular */
+        font-family: var(--font-libre-caslon), serif;
+        /* Menggunakan Libre Caslon */
+        letter-spacing: 1px;
+    }
+
+    .miradescs {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 2065px;
+        font-size: 17px;
+        font-weight: 400;
+        /* Memastikan font yang ditarik adalah Regular */
+        font-family: var(--font-vend-sans), sans-serif;
+        /* Menggunakan Vend Sans */
+        letter-spacing: 1px;
+    }
+
+    .backgroundmirabawah {
+        position: absolute;
+        inset: 0;
+        top: 1820px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1360px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .mira {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffc647;
+        top: 550px;
+        font-size: 28px;
+        font-weight: 400;
+        /* Ubah dari 600 ke 400 agar menggunakan font Regular */
+        font-family: var(--font-libre-caslon), serif;
+        /* Menggunakan Libre Caslon */
+        letter-spacing: 1px;
+    }
+
+    .miradesc {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 620px;
+        font-size: 17px;
+        font-weight: 400;
+        /* Memastikan font yang ditarik adalah Regular */
+        font-family: var(--font-vend-sans), sans-serif;
+        /* Menggunakan Vend Sans */
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .miraquotes {
+        position: absolute;
+        left: 80%;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 1000px;
+        font-size: 17px;
+        font-weight: 400;
+        /* Memastikan font yang ditarik adalah Regular */
+        font-family: var(--font-vend-sans), sans-serif;
+        /* Menggunakan Vend Sans */
+        letter-spacing: 1px;
+        text-align: center;
+    }
 }

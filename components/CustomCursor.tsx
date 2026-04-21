@@ -28,7 +28,9 @@ export default function CustomCursor() {
                     !!target.closest('button') ||
                     !!target.closest('a') ||
                     target.getAttribute('role') === 'button' ||
-                    target.getAttribute('tabindex') !== null;
+                    target.getAttribute('tabindex') !== null ||
+                    target.getAttribute('data-interactive') === 'true' ||
+                    !!target.closest('[data-interactive="true"]');
 
                 setIsHover(!!isInteractive);
             }

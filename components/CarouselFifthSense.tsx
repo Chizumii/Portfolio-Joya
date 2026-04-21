@@ -51,7 +51,7 @@ interface SlotStyle {
 const SLOT_STYLES: Record<SlotRole, SlotStyle> = {
   'far-left':  { x: -380, scale: 1,  opacity: 0,   zIndex: 0 },
   'left':      { x: -290, scale: 1, opacity: 0.5, zIndex: 1 },
-  'center':    { x: 0,    scale: 1.5,  opacity: 1,   zIndex: 3 },
+  'center':    { x: 0,    scale: 1.5,  opacity: 1,   zIndex: 50 },
   'right':     { x: 290,  scale: 1, opacity: 0.5, zIndex: 1 },
   'far-right': { x: 380,  scale: 1,  opacity: 0,   zIndex: 0 },
 };

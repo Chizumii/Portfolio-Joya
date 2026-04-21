@@ -10,11 +10,9 @@ export default function Aboutpage() {
   return (
     <div className="relative w-screen h-screen overflow-y-auto overflow-x-hidden">
 
-      <div
-        className="absolute inset-x-0 top-0 -z-10"
+      <div className="absolute inset-x-0 top-0 -z-10 full-height-bg"
         style={{
-          height: '460vh',
-          background: 'linear-gradient(180deg, #B05CA4 -3%, #2d2c42 20%, #16122a  95%, #fff8e9 160%)'
+          background: 'linear-gradient(180deg, #B05CA4 -3%, #2d2c42 20%, #16122a 95%, #fff8e9 160%)'
         }}
       />
 
@@ -35,10 +33,9 @@ export default function Aboutpage() {
       </div>
 
       {/* Content */}
-      <main className="relative z-10 flex-1" style={{ height: '460vh', overflow: 'hidden' }}>
-        <div className="bungakuning">
-          <Image src="/assets/bungakuning.svg" alt="bungakuning" width={130} height={130} style={{ width: '100%', height: 'auto' }} priority />
-        </div>
+      <main className="relative z-10 flex-1 main-content">        <div className="bungakuning">
+        <Image src="/assets/bungakuning.svg" alt="bungakuning" width={130} height={130} style={{ width: '100%', height: 'auto' }} priority />
+      </div>
         <div className="bintangbirupolos">
           <Image src="/assets/bintangbirupolos.svg" alt="bintangbirupolos" width={40} height={40} style={{ width: '100%', height: 'auto' }} priority />
         </div>
@@ -229,12 +226,12 @@ export default function Aboutpage() {
           <FooterX />
         </div>
         <div className="dekorfooter">
-          <Image src="/assets/dekorfooterkanan.svg" alt="dekorfooterkanan" width={80}
-            height={80} style={{ width: '100%', height: 'auto' }} priority />
+          <Image src="/assets/dekorfooterkanan.svg" alt="dekorfooterkanan" width={1000}
+            height={1000} style={{ width: '100%', height: 'auto' }} priority />
         </div>
         <div className="dekorfooterdua">
-          <Image src="/assets/dekorfooterkiri.svg" alt="dekorfooterkanankiri" width={80}
-            height={80} style={{ width: '100%', height: 'auto' }} priority />
+          <Image src="/assets/dekorfooterkiri.svg" alt="dekorfooterkanankiri" width={1000}
+            height={1000} style={{ width: '100%', height: 'auto' }} priority />
         </div>
 
       </main>

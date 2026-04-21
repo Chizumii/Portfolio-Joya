@@ -12,9 +12,8 @@ export default function Fleurchar() {
         <div className="relative w-screen h-screen overflow-y-auto overflow-x-hidden">
 
             <div
-                className="absolute inset-x-0 top-0 -z-10"
+                className="absolute inset-x-0 top-0 -z-10 fleur-full-bg"
                 style={{
-                    height: '540vh',
                     background: 'linear-gradient(180deg, #B05CA4 -9%, #2d2c42 10%, #16122a  95%, #fff8e9 160%)'
                 }}
             />
@@ -36,7 +35,7 @@ export default function Fleurchar() {
             </div>
 
             {/* Content */}
-            <main className="relative z-10 flex-1" style={{ height: '540vh', overflow: 'hidden' }}>
+            <main className="relative z-10 flex-1 fleur-content">
                 {/* Back Button - selalu melayang */}
                 <button
                     onClick={() => { window.location.hash = '#norules'; }}

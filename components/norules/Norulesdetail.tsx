@@ -12,9 +12,8 @@ export default function NoRulesDetail() {
         <div className="relative w-screen h-screen overflow-y-auto overflow-x-hidden">
 
             <div
-                className="absolute inset-x-0 top-0 -z-10"
+                className="absolute inset-x-0 top-0 -z-10 full-norules-bg"
                 style={{
-                    height: '965vh',
                     background: 'linear-gradient(180deg, #B05CA4 -9%, #2d2c42 10%, #16122a  95%, #fff8e9 160%)'
                 }}
             />
@@ -36,7 +35,7 @@ export default function NoRulesDetail() {
             </div>
 
             {/* Content */}
-            <main className="relative z-10 flex-1" style={{ height: '965vh', overflow: 'hidden' }}>
+            <main className="relative z-10 flex-1 norules-content">
                 {/* Back Button - selalu melayang */}
                 <button
                     onClick={() => { window.location.hash = '#about'; }}
@@ -67,7 +66,7 @@ export default function NoRulesDetail() {
                         src="/assets/titleNoRules.png"
                         alt="title"
                         width={1380}
-                        height={780}
+                        height={980}
                         style={{ width: '100%', height: 'auto' }}
                         priority
                     />
@@ -117,7 +116,7 @@ export default function NoRulesDetail() {
                         src="/assets/bgskill.svg"
                         alt="bgskill"
                         width={1380}
-                        height={780}
+                        height={1380}
                         style={{ width: '100%', height: 'auto' }}
                         priority
                     />
@@ -254,7 +253,7 @@ export default function NoRulesDetail() {
                 <span className="descskill6">Ranged, Healer, <br /> Buffer</span>
 
                 <div className="skillaNoRules">
-                    <Image src="/assets/skill.svg" alt="skill" width={23} height={25} style={{ width: '100%', height: 'auto' }} />
+                    <Image src="/assets/skill.svg" alt="skill" width={1800} height={90} style={{ width: '100%', height: 'auto' }} />
                 </div>
 
                 <div className="bgtitle7">
@@ -271,7 +270,7 @@ export default function NoRulesDetail() {
                 </div>
 
                 <div className="maps">
-                    <Image src="/assets/map.svg" alt="map" width={2300} height={2500} style={{ width: '100%', height: 'auto' }} />
+                    <Image src="/assets/map.svg" alt="map" width={2838} height={2717} style={{ width: '100%', height: 'auto' }} />
                 </div>
                 <div className="mapsdetial">
                     <Image src="/assets/mapsdetail.svg" alt="map" width={2300} height={2500} style={{ width: '100%', height: 'auto' }} />

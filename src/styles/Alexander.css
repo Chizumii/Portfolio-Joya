@@ -236,3 +236,262 @@
     width: 100%;
     height: auto;
 }
+
+.full-alexander-bg {
+    height: 525vh;
+}
+
+.alexander-content {
+    height: 525vh;
+    overflow: hidden;
+}
+
+@media (min-width: 1480px) {
+    /* =====================
+   BACKGROUND DECORATIONS
+   ===================== */
+
+    .full-alexander-bg {
+        height: 490vh;
+    }
+
+    .alexander-content {
+        height: 490vh;
+        overflow: hidden;
+    }
+
+    .backgroundfleur {
+        position: absolute;
+        inset: 0;
+        top: -380px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1360px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .bgcharfleur {
+        position: absolute;
+        inset: 0;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1660px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .backgroundfleurtengah {
+        position: absolute;
+        inset: 0;
+        top: 1660px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1360px;
+        height: auto;
+        z-index: -5;
+        pointer-events: none;
+    }
+
+    .backgroundfleurbawah {
+        position: absolute;
+        inset: 0;
+        top: 2600px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1360px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    /* =====================
+   BACK BUTTON
+   ===================== */
+
+    .backbutton-fixed {
+        position: fixed;
+        top: 100px;
+        left: 30px;
+        width: 60px;
+        height: auto;
+        z-index: 100;
+        cursor: pointer;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .backbutton-fixed:hover {
+        transform: scale(1.1);
+    }
+
+    /* =====================
+   WATERFALL
+   ===================== */
+
+    .waterfall {
+        position: absolute;
+        inset: 0;
+        top: 610px;
+        left: 10.4%;
+        transform: translateX(-50%);
+        width: 42px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    /* =====================
+   CHARACTER PROFILE
+   ===================== */
+
+    .fleurprofile {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 360px;
+        height: auto;
+        z-index: 2;
+    }
+
+    .lizhen {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffc647;
+        top: 550px;
+        font-size: 28px;
+        font-weight: 400;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+    }
+
+    .lizhendesc {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 600px;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: var(--font-vend-sans), sans-serif;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    /* =====================
+   CHARACTER DETAIL
+   ===================== */
+
+    .fleurdetail {
+        position: absolute;
+        top: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2180px;
+        height: auto;
+        z-index: 2;
+    }
+
+    .fleurquotes {
+        position: absolute;
+        left: 80%;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 1070px;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: var(--font-vend-sans), sans-serif;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    /* =====================
+   FULL CHARACTER
+   ===================== */
+
+    .alexfulldecor {
+        position: absolute;
+        top: 2100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1420px;
+        height: auto;
+        z-index: 40;
+    }
+
+    .alexfull {
+        position: absolute;
+        top: 2190px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1200px;
+        height: auto;
+        z-index: 40;
+    }
+
+    /* =====================
+   SPRITES TITLE
+   ===================== */
+
+    .alextitle {
+        position: absolute;
+        top: 2100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .aboutfleur {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffc647;
+        top: 3px;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+    }
+
+    .bintangkuningtitle {
+        position: absolute;
+        left: 90%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 23px;
+        height: auto;
+        z-index: 11;
+        pointer-events: none;
+    }
+
+    .bintangkuningtitledua {
+        position: absolute;
+        left: 10%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 23px;
+        height: auto;
+        z-index: 12;
+        pointer-events: none;
+    }
+
+    /* =====================
+   FOOTER
+   ===================== */
+
+    .footerResets {
+        position: absolute;
+        top: 430px;
+        width: 100%;
+        height: auto;
+    }
+}

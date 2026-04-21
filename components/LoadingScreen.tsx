@@ -27,7 +27,6 @@ const imagesToPreload = [
   "/assets/bgchar.svg",
   "/assets/bgchar2.svg",
   "/assets/bgchar3.svg",
-  "/assets/bgchardetail.svg",
   "/assets/bgchardetailz.svg",
   "/assets/bgchars3.svg",
   "/assets/bgcharshingking.svg",

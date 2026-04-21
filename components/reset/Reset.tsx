@@ -12,9 +12,8 @@ export default function Reset() {
         <div className="relative w-screen h-screen overflow-y-auto overflow-x-hidden">
 
             <div
-                className="absolute inset-x-0 top-0 -z-10"
+                className="absolute inset-x-0 top-0 -z-10 full-reset-bg"
                 style={{
-                    height: '730vh',
                     background: 'linear-gradient(180deg, #B05CA4 -9%, #2d2c42 10%, #16122a  95%, #fff8e9 160%)'
                 }}
             />
@@ -36,7 +35,7 @@ export default function Reset() {
             </div>
 
             {/* Content */}
-            <main className="relative z-10 flex-1" style={{ height: '730vh', overflow: 'hidden' }}>
+            <main className="relative z-10 flex-1 reset-content" >
                 {/* Back Button - selalu melayang */}
                 <button
                     onClick={() => { window.location.hash = '#about'; }}
@@ -62,8 +61,8 @@ export default function Reset() {
                         priority
                     />
                 </div>
-                <span className="resettitle"> Reset? <br />Is it still you? </span>
-
+                <span className="resettitle"> Reset? </span>
+                <span className="resettitle2">Is it still you? </span>
 
                 <div className="bungaReset">
                     <Image
@@ -138,8 +137,8 @@ export default function Reset() {
                     <Image
                         src="/assets/projectreset.png"
                         alt="bgskill"
-                        width={1900}
-                        height={1900}
+                        width={2900}
+                        height={2900}
                         style={{ width: '100%', height: 'auto' }}
                         priority
                     />
@@ -194,7 +193,7 @@ export default function Reset() {
 
                 <div className="bgtitlereset4">
                     <Image src="/assets/bgtitle.svg" alt="bg" width={250} height={42} style={{ width: '100%', height: 'auto' }} priority />
-                    <span className="kocakreset">Challange</span>
+                    <span className="kocakreset">Challenge</span>
 
                     <div className="bintangkuningtitle">
                         <Image src="/assets/bintangkuningtitle.svg" alt="star1" width={23} height={25} style={{ width: '100%', height: 'auto' }} />

@@ -1050,6 +1050,21 @@
     overflow: hidden;
 }
 
+.resettitle2 {
+    position: absolute;
+    z-index: 50;
+    left: 31.3%;
+    transform: translateX(-50%);
+    color: #000000;
+    top: 450px;
+    font-size: 65px;
+    font-weight: 400;
+    font-family: var(--font-libre-caslon), serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
 @media (min-width: 1480px) {
 
     .full-reset-bg {

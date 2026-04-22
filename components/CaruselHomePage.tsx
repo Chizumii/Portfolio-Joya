@@ -146,7 +146,7 @@ export const DEFAULT_AVATARS: AvatarItem[] = [
     cardHeight: 400,
     cardOffsetX: 5,
     cardOffsetY: 0,
-    anchorId: '#personalwork',
+    anchorId: '#PersonalWork',
   },
 ];
 

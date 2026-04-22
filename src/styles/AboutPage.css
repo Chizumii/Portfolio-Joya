@@ -112,6 +112,61 @@
     pointer-events: none;
 }
 
+.nextbutton8 {
+    position: absolute;
+    top: 1100px;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: auto;
+    z-index: 15;
+    pointer-events: none;
+
+    animation: moveLeftRight 4s ease-in-out infinite;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(-50%) translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateX(20px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateX(0);
+    }
+}
+
+@keyframes moveRightLeft {
+    0% {
+        transform: translateX(50%) translateX(0);
+    }
+
+    50% {
+        transform: translateX(50%) translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(50%) translateX(0);
+    }
+}
+
+.prevbutton8 {
+    position: absolute;
+    top: 1100px;
+    left: 73%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: auto;
+    z-index: 15;
+    pointer-events: none;
+    animation: moveRightLeft 4s ease-in-out infinite;
+
+}
+
+
 .bintangbirupolos {
     position: absolute;
     top: 200px;
@@ -631,15 +686,40 @@
 }
 
 .full-height-bg {
-  height: 460vh;
+    height: 460vh;
 }
 
 .main-content {
-  height: 460vh;
-  overflow: hidden;
+    height: 460vh;
+    overflow: hidden;
 }
 
 @media (min-width: 1460px) {
+    .nextbutton8 {
+        position: absolute;
+        top: 1100px;
+        left: 42%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: auto;
+        z-index: 15;
+        pointer-events: none;
+
+        animation: moveLeftRight 4s ease-in-out infinite;
+    }
+
+    .prevbutton8 {
+        position: absolute;
+        top: 1100px;
+        left: 67%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: auto;
+        z-index: 15;
+        pointer-events: none;
+        animation: moveRightLeft 4s ease-in-out infinite;
+
+    }
 
     .full-height-bg {
         height: 428vh;

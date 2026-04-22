@@ -24,7 +24,6 @@ export default function Navbar() {
   const scrollToElement = (id: string) => {
     const el = document.getElementById(id);
     if (!el) return;
-    // Cari scroll container terdekat (div overflow-y-auto di Aboutpage)
     const container = el.closest('.overflow-y-auto') as HTMLElement | null;
     if (container) {
       container.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' });
@@ -33,14 +32,31 @@ export default function Navbar() {
     }
   };
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, scrollTo: string | null) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+    scrollTo: string | null
+  ) => {
+    e.preventDefault();
     if (!scrollTo) return;
 
-    e.preventDefault();
+    const currentHash = window.location.hash || "#about";
+    const isOnAboutPage = ["#about", "#work", "#contact"].includes(currentHash);
+
     setActiveHash(href);
     window.history.pushState(null, '', href);
-    scrollToElement(scrollTo); // langsung scroll untuk semua link
+
+    if (isOnAboutPage) {
+      // Sudah di AboutPage — langsung scroll
+      scrollToElement(scrollTo);
+    } else {
+      // Di halaman lain — simpan target scroll, lalu pindah ke AboutPage
+      sessionStorage.setItem('pendingScrollTarget', scrollTo);
+      // Trigger hashchange supaya page.tsx re-render ke AboutPage
+      window.dispatchEvent(new HashChangeEvent('hashchange'));
+    }
   };
+
   return (
     <nav className="navWrapper">
       <div className="navBackground">

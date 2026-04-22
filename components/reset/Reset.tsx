@@ -133,9 +133,46 @@ export default function Reset() {
 
                 <span className="descReset">Reset is a dystopian sci-fi visual novel exploring the fragility of human identity in a world where continuous consciousness transfers blur the line <br />between eternal salvation and psychological imprisonment.
                 </span>
+
                 <div className="bgprojects">
                     <Image
-                        src="/assets/projectreset.png"
+                        src="/assets/HOMESCREEN.png"
+                        alt="bgskill"
+                        width={2900}
+                        height={2900}
+                        style={{ width: '100%', height: 'auto' }}
+                        priority
+                    />
+                </div><div className="bgprojects1">
+                    <Image
+                        src="/assets/SC3-SH4.png"
+                        alt="bgskill"
+                        width={2900}
+                        height={2900}
+                        style={{ width: '100%', height: 'auto' }}
+                        priority
+                    />
+                </div><div className="bgprojects2">
+                    <Image
+                        src="/assets/SC5-SH1.png"
+                        alt="bgskill"
+                        width={2900}
+                        height={2900}
+                        style={{ width: '100%', height: 'auto' }}
+                        priority
+                    />
+                </div><div className="bgprojects3">
+                    <Image
+                        src="/assets/Normal_ ending.png"
+                        alt="bgskill"
+                        width={2900}
+                        height={2900}
+                        style={{ width: '100%', height: 'auto' }}
+                        priority
+                    />
+                </div><div className="bgprojects4">
+                    <Image
+                        src="/assets/Bad Ending.png"
                         alt="bgskill"
                         width={2900}
                         height={2900}

@@ -24,10 +24,25 @@
 .fifthsensetitle {
     position: absolute;
     z-index: 50;
+    left: 23%;
+    transform: translateX(-50%);
+    color: #000000;
+    top: 380px;
+    font-size: 65px;
+    font-weight: 400;
+    font-family: var(--font-libre-caslon), serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+.fifthsensetitle2 {
+    position: absolute;
+    z-index: 50;
     left: 24%;
     transform: translateX(-50%);
-    color: #ffc647;
-    top: 380px;
+    color: #000000;
+    top: 440px;
     font-size: 65px;
     font-weight: 400;
     font-family: var(--font-libre-caslon), serif;
@@ -88,12 +103,23 @@
 .postersense {
     position: absolute;
     z-index: 5;
-    width: 650px;
-    left: 73%;
+    width: 350px;
+    left: 62%;
     transform: translateX(-50%);
     height: auto;
     top: 1000px;
 }
+
+.postersense1 {
+    position: absolute;
+    z-index: 6;
+    width: 350px;
+    left: 84%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1340px;
+}
+
 
 .bgsingkingtengahsense {
     position: absolute;
@@ -364,4 +390,418 @@
     width: 100%;
     height: auto;
     cursor: pointer;
+}
+
+.full-fifthsense-bg {
+    height: 564vh;
+}
+
+.fifthsesne-content {
+    height: 564vh;
+    overflow: hidden;
+}
+
+@media (min-width: 1460px) {
+    .backgroundSense {
+        position: absolute;
+        inset: 0;
+        top: -380px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1460px !important;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .backbutton-fixed {
+        position: fixed;
+        top: 100px;
+        left: 30px;
+        width: 60px;
+        height: auto;
+        z-index: 100;
+        cursor: pointer;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .fifthsensetitle {
+        position: absolute;
+        z-index: 50;
+        left: 23%;
+        transform: translateX(-50%);
+        color: #000000;
+        top: 380px;
+        font-size: 65px;
+        font-weight: 400;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        transition: opacity 0.3s ease;
+    }
+
+    .fifthsensetitle2 {
+        position: absolute;
+        z-index: 50;
+        left: 24%;
+        transform: translateX(-50%);
+        color: #000000;
+        top: 440px;
+        font-size: 65px;
+        font-weight: 400;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        transition: opacity 0.3s ease;
+    }
+
+    .awanSense {
+        position: absolute;
+        top: 150px;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 1900px !important;
+        height: auto;
+        z-index: 2;
+    }
+
+    .bungaSense {
+        position: absolute;
+        top: 150px !important;
+        left: 810px !important;
+        width: 740px !important;
+        height: auto;
+        z-index: 10;
+    }
+
+    .Sensebungakiri {
+        position: absolute;
+        z-index: 5;
+        width: 200px;
+        left: 11%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 750px;
+    }
+
+    .water {
+        position: absolute;
+        z-index: 5;
+        width: 33px;
+        left: 6%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 923px;
+        animation: float 4.5s ease-in-out infinite;
+    }
+
+    .Sensebungakanand {
+        position: absolute;
+        z-index: 5;
+        width: 150px;
+        left: 90%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 1000px;
+    }
+
+    .postersense {
+        position: absolute;
+        z-index: 5;
+        width: 350px;
+        left: 65%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 1000px;
+    }
+
+    .postersense1 {
+        position: absolute;
+        z-index: 6;
+        width: 350px;
+        left: 84%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 1340px;
+    }
+
+    .bgsingkingtengahsense {
+        position: absolute;
+        z-index: 3;
+        width: 1360px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 650px;
+    }
+
+    .bgsingkingtengah2sense {
+        position: absolute;
+        z-index: 3;
+        width: 1360px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 1550px;
+    }
+
+    .desc1sense {
+        position: absolute;
+        left: 27.7% !important;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 1120px;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: var(--font-vend-sans), sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .desc2sense {
+        position: absolute;
+        left: 28.8% !important;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 1339px;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: var(--font-vend-sans), sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .desc3sense {
+        position: absolute;
+        left: 29% !important;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 1600px;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: var(--font-vend-sans), sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .bgcharsense1 {
+        position: absolute;
+        z-index: 3;
+        width: 1400px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 2080px;
+        /* 1980 + 100 */
+    }
+
+    .waterdrop11 {
+        position: absolute;
+        z-index: 3;
+        width: 21px;
+        left: 21.3%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 2143px;
+        /* 2043 + 100 */
+        animation: float 4.5s ease-in-out infinite;
+    }
+
+    .waterdrop22 {
+        position: absolute;
+        z-index: 3;
+        width: 33px;
+        left: 19%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 2210px;
+        /* 2110 + 100 */
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .waterdrop33 {
+        position: absolute;
+        z-index: 3;
+        width: 33px;
+        left: 96%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 2280px;
+        /* 2180 + 100 */
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .waterdrop44 {
+        position: absolute;
+        z-index: 3;
+        width: 20px;
+        left: 90.4%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 2360px;
+        /* 2260 + 100 */
+        animation: float 4.5s ease-in-out infinite;
+    }
+
+    .bgcharshinking2sense {
+        position: absolute;
+        z-index: 3;
+        width: 1450px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 1900px;
+        /* 1800 + 100 */
+    }
+
+    .bgcharshinking3sense {
+        position: absolute;
+        z-index: 3;
+        width: 2050px;
+        left: 48%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 1900px;
+        /* 1800 + 100 */
+        opacity: 0.8;
+    }
+
+    .bgtitlesense10 {
+        position: absolute;
+        top: 1060px;
+        left: 20%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .bgtitlesinkings6 {
+        position: absolute;
+        top: 1280px;
+        left: 20%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .bgtitlesinkings7 {
+        position: absolute;
+        top: 1540px;
+        left: 20%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .bgtitlesinkingssense {
+        position: absolute;
+        top: 1900px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .sensetls {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffc647;
+        top: 3px;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        transition: opacity 0.3s ease;
+    }
+
+    .bintangkuningtitlesense {
+        position: absolute;
+        left: 90%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 23px;
+        height: auto;
+        z-index: 11;
+        pointer-events: none;
+    }
+
+    .bintangkuningtitleduasense {
+        position: absolute;
+        left: 10%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 23px;
+        height: auto;
+        z-index: 12;
+        pointer-events: none;
+    }
+
+    .dekorasiabouts {
+        position: absolute;
+        left: 50%;
+        top: 1800px;
+        transform: translateX(-50%);
+        width: 900px;
+        height: auto;
+        z-index: 12;
+        pointer-events: none;
+    }
+
+    .challangesdecsingkings {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 1970px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: var(--font-vend-sans), sans-serif;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .caruselFifthsense {
+        position: absolute;
+        inset: 0;
+        top: 2350px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 160px;
+        height: auto;
+        z-index: 80;
+    }
+
+    .backgroundsingkings {
+        position: absolute;
+        inset: 0;
+        top: 2850px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1360px;
+        height: auto;
+        z-index: 1;
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    .footerSinkings {
+        position: absolute;
+        top: 700px;
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .full-fifthsense-bg {
+        height: 525vh;
+    }
+
+    .fifthsesne-content {
+        height: 525vh;
+        overflow: hidden;
+    }
 }

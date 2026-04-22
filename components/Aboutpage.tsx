@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import '../src/styles/AboutPage.css';
@@ -7,6 +8,29 @@ import AvatarCarousel from './CaruselHomePage';
 import FooterX from './Footer';
 
 export default function Aboutpage() {
+
+  // Baca pending scroll target dari sessionStorage (dikirim dari Navbar saat di halaman lain)
+  useEffect(() => {
+    const target = sessionStorage.getItem('pendingScrollTarget');
+    if (!target) return;
+
+    sessionStorage.removeItem('pendingScrollTarget');
+
+    // Delay supaya DOM sudah fully rendered
+    const timeout = setTimeout(() => {
+      const el = document.getElementById(target);
+      if (!el) return;
+      const container = el.closest('.overflow-y-auto') as HTMLElement | null;
+      if (container) {
+        container.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' });
+      } else {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 300);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div className="relative w-screen h-screen overflow-y-auto overflow-x-hidden">
 
@@ -104,6 +128,13 @@ export default function Aboutpage() {
         <div className="ringcarusel">
           <Image src="/assets/circlePFP.svg" alt="circlePFP" width={100} height={100} style={{ width: '100%', height: 'auto' }} priority />
         </div>
+
+        <div className="prevbutton8">
+          <Image src="/assets/backbutton.svg" alt="decorationPFP" width={100} height={100} style={{ width: '100%', height: 'auto' }} priority />
+        </div>  
+        <div className="nextbutton8">
+          <Image src="/assets/nextbutton.svg" alt="decorationPFP" width={100} height={100} style={{ width: '100%', height: 'auto' }} priority />
+        </div>
         <div className="decorationPFP">
           <Image src="/assets/decorationPFP.svg" alt="decorationPFP" width={100} height={100} style={{ width: '100%', height: 'auto' }} priority />
         </div>
@@ -176,7 +207,7 @@ export default function Aboutpage() {
 
           <div className="descriptionjoya">
             <span>
-              I’m Joya B. Tjandra, an Illustrator that is based in <br />Indonesia. Specializing in fantasy themed illustrations, <br />I desire to weave strong narratives into every piece I <br /> create. <br /> <br />
+              I'm Joya B. Tjandra, an Illustrator that is based in <br />Indonesia. Specializing in fantasy themed illustrations, <br />I desire to weave strong narratives into every piece I <br /> create. <br /> <br />
               My primary strengths are in character design and <br /> conceptual illustration, where I focus on bringing <br /> unique personalities and rich backstories to life. I <br /> consider myself hardworking and passionate in <br /> the works that i create.
             </span>
           </div>

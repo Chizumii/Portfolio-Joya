@@ -19,6 +19,7 @@ import Yejin from '@/components/fifthsense/Yejin';
 import Reset from '@/components/reset/Reset';
 import Alexander from '@/components/reset/Alexander';
 import System from '@/components/reset/System';
+import PersonalWork from '@/components/personalart/personalwork';
 // import PersonalWorkDetail from '@/components/PersonalWorkDetail';
 
 export default function Home() {
@@ -45,6 +46,8 @@ export default function Home() {
       ) : (
         <>
           {activeHash === "#about" && <AboutPage />}
+          {activeHash === "#work" && <AboutPage />}
+          {activeHash === "#contact" && <AboutPage />}
           {activeHash === "#sinkingthoughts" && <SingkingDetail />}
           {activeHash === "#norules" && <NoRulesDetail />}
           {activeHash === "#fleur" && <Fleurchar />}
@@ -61,6 +64,7 @@ export default function Home() {
           {activeHash === "#Reset" && <Reset />}
           {activeHash === "#Alexander" && <Alexander />}
           {activeHash === "#System" && <System />}
+          {activeHash === "#personalwork" && <PersonalWork />}
         </>
       )}
 

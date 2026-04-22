@@ -11,8 +11,7 @@ export default function Fifthsense() {
     return (
         <div className="relative w-screen h-screen overflow-y-auto overflow-x-hidden">
 
-            <div className="absolute inset-x-0 top-0 -z-10" style={{
-                height: '564vh',
+            <div className="absolute inset-x-0 top-0 -z-10 full-fifthsense-bg" style={{
                 background: 'linear-gradient(180deg, #B05CA4 -9%, #2d2c42 10%, #16122a 95%, #fff8e9 160%)',
             }} />
 
@@ -23,7 +22,7 @@ export default function Fifthsense() {
 
             <div className="sticky top-0 z-50"><Navbar /></div>
 
-            <main className="relative z-10 flex-1" style={{ height: '564vh', overflow: 'hidden' }}>
+            <main className="relative z-10 flex-1 fifthsesne-content">
                 <button
                     onClick={() => { window.location.hash = '#about'; }}
                     className="backbutton-fixed"
@@ -42,7 +41,8 @@ export default function Fifthsense() {
                     <Image src="/assets/awanNoRules.svg" alt="awan"
                         width={1380} height={780} style={{ width: '100%', height: 'auto' }} priority />
                 </div>
-                <span className="fifthsensetitle"> Fifth <br />Sense </span>
+                <span className="fifthsensetitle"> Fifth</span>
+                <span className="fifthsensetitle2">Sense </span>
                 <div className="bungaSense">
                     <Image src="/assets/bungaNoRules.svg" alt="bunga"
                         width={1380} height={780} style={{ width: '100%', height: 'auto' }} priority />
@@ -68,10 +68,17 @@ export default function Fifthsense() {
                     <Image src="/assets/backgroundNoRules.svg" alt="background tengah"
                         width={1380} height={780} style={{ width: '100%', height: 'auto' }} priority />
                 </div>
+
                 <div className="postersense">
-                    <Image src="/assets/fifthsenseposter.png" alt="bunga kanan"
+                    <Image src="/assets/Saekjo Poster A3.png" alt="bunga kanan"
                         width={1900} height={1900} style={{ width: '100%', height: 'auto' }} priority />
                 </div>
+                <div className="postersense1">
+                    <Image src="/assets/saekjo studio feed.png" alt="bunga kanan"
+                        width={1900} height={1900} style={{ width: '100%', height: 'auto' }} priority />
+                </div>
+                
+
 
 
 
@@ -103,7 +110,7 @@ export default function Fifthsense() {
                 <span className="desc2sense">Five sets of mascots in which four of them represents the <br /> four seasons that is spring, summer, autumn and winter. <br /> And the other one is a primary animal macot that represents  <br />Saekjo Studio as a whole.</span>
                 <div className="bgtitlesinkings7">
                     <Image src="/assets/bgtitle.svg" alt="bg" width={250} height={42} style={{ width: '100%', height: 'auto' }} priority />
-                    <span className="sinkingtls"> Challange </span>
+                    <span className="sinkingtls"> Challenge </span>
 
                     <div className="bintangkuningtitlesense">
                         <Image src="/assets/bintangkuningtitle.svg" alt="star1" width={23} height={25} style={{ width: '100%', height: 'auto' }} />

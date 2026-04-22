@@ -1,0 +1,1018 @@
+.personal-background-sense {
+    position: absolute;
+    inset: 0;
+    top: -380px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1360px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.personal-water-three {
+    position: absolute;
+    z-index: 5;
+    width: 30px;
+    left: 6%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2970px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.personal-water-four {
+    position: absolute;
+    z-index: 5;
+    width: 40px;
+    left: 12%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 2880px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+
+.personal-backbutton-fixed {
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    width: 60px;
+    height: auto;
+    z-index: 100;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.personal-title-main {
+    position: absolute;
+    z-index: 50;
+    left: 23%;
+    transform: translateX(-50%);
+    color: #000000;
+    top: 380px;
+    font-size: 65px;
+    font-weight: 400;
+    font-family: var(--font-libre-caslon), serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+.personal-title-sub {
+    position: absolute;
+    z-index: 50;
+    left: 18.5%;
+    transform: translateX(-50%);
+    color: #000000;
+    top: 450px;
+    font-size: 50px;
+    font-family: var(--font-libre-caslon), serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+.personal-awan-sense {
+    position: absolute;
+    top: 150px;
+    left: -120px;
+    width: 1750px;
+    height: auto;
+    z-index: 2;
+}
+
+.personal-bunga-sense {
+    position: absolute;
+    top: 150px;
+    left: 800px;
+    width: 650px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-bunga-kiri {
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    left: 11%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 750px;
+}
+
+.personal-water-one {
+    position: absolute;
+    z-index: 5;
+    width: 33px;
+    left: 6%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 923px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.personal-water-two {
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    left: 92%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 800px;
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.personal-bunga-kanan {
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    left: 90%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1000px;
+}
+
+
+.personal-bgsingking-tengah {
+    position: absolute;
+    z-index: 3;
+    width: 1360px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 650px;
+}
+
+.personal-bgsingking-tengah-two {
+    position: absolute;
+    z-index: 3;
+    width: 1360px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    top: 1550px;
+}
+
+.personal-bgtitle-about {
+    position: absolute;
+    top: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+
+.personal-img-atas {
+    position: absolute;
+    top: 1250px;
+    left: 71.5%;
+    transform: translateX(-50%);
+    width: 435px;
+    height: auto;
+    z-index: 10;
+}
+
+
+.personal-img-atas1 {
+    position: absolute;
+    top: 1540px;
+    left: 21.2%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-img-atas2 {
+    position: absolute;
+    top: 1540px;
+    left: 38.9%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: auto;
+    z-index: 10;
+}
+
+
+
+.personal-label-about {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffc647;
+    top: 3px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-libre-caslon), serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+.personal-label-villian {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffc647;
+    top: 9px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-libre-caslon), serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+.personal-label-golden {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffc647;
+    top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-libre-caslon), serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+
+.bunga-img-full {
+    position: absolute;
+    top: 2700px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1450px;
+    height: auto;
+}
+
+.personal-bintang-kanan {
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 23px;
+    height: auto;
+    z-index: 11;
+    pointer-events: none;
+}
+
+.personal-bintang-kiri {
+    position: absolute;
+    left: 10%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 23px;
+    height: auto;
+    z-index: 12;
+    pointer-events: none;
+}
+
+
+.personal-desc-about {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 980px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.personal-bgtitle-villian {
+    position: absolute;
+    top: 1200px;
+    left: 22.7%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-desc-villian {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 1270px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.personal-bgtitle-other {
+    position: absolute;
+    top: 3000px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-bgtitle-golden {
+    position: absolute;
+    top: 2100px;
+    left: 63.7%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-dekorasi-tengah {
+    position: absolute;
+    top: 1800px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1300px;
+    height: auto;
+}
+
+.personal-bg-frame {
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1380px;
+    height: auto;
+}
+
+.personal-tetasan-one {
+    position: absolute;
+    top: 1930px;
+    left: 11%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: auto;
+    animation: ease-in-out float 4s infinite;
+}
+
+.personal-tetasan-two {
+    position: absolute;
+    top: 2000px;
+    left: 7%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: auto;
+    animation: ease-in-out float 4.5s infinite;
+
+}
+
+
+
+.personal-img-full {
+    position: absolute;
+    top: 3000px;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 1800px;
+    height: auto;
+    z-index: 9;
+}
+
+.personal-img-full1 {
+    position: absolute;
+    top: 3130px;
+    left: 25.4%;
+    transform: translateX(-50%);
+    width: 535px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-img-full2 {
+    position: absolute;
+    top: 3130px;
+    left: 59%;
+    transform: translateX(-50%);
+    width: 343px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-img-full3 {
+    position: absolute;
+    top: 3130px;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-img-full4 {
+    position: absolute;
+    top: 3740px;
+    left: 36%;
+    transform: translateX(-50%);
+    width: 550px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-img-full5 {
+    position: absolute;
+    top: 3740px;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
+
+
+
+.personal-img-tengah {
+    position: absolute;
+    top: 2150px;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 470px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-img-tengah1 {
+    position: absolute;
+    top: 2435px;
+    left: 62%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-img-tengah2 {
+    position: absolute;
+    top: 2435px;
+    left: 79%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: auto;
+    z-index: 10;
+}
+
+.personal-desc-golden {
+    position: absolute;
+    left: 70%;
+    transform: translateX(-50%);
+    color: #fff8e9;
+    top: 2170px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-vend-sans), sans-serif;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.personal-background-bawah {
+    position: absolute;
+    inset: 0;
+    top: 4150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1360px;
+    height: auto;
+    z-index: 1;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.personal-footer-wrap {
+    position: absolute;
+    top: 1950px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.personal-full-bg {
+    height: 750vh;
+}
+
+.personal-main-content {
+    height: 750vh;
+    overflow: hidden;
+}
+
+@media (min-width: 1460px) {
+
+    .personal-background-sense {
+        position: absolute;
+        inset: 0;
+        top: -380px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1460px;
+        height: auto;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .personal-backbutton-fixed {
+        position: fixed;
+        top: 100px;
+        left: 30px;
+        width: 60px;
+        height: auto;
+        z-index: 100;
+        cursor: pointer;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .personal-title-main {
+        position: absolute;
+        z-index: 50;
+        left: 23%;
+        transform: translateX(-50%);
+        color: #000000;
+        top: 380px;
+        font-size: 65px;
+        font-weight: 400;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        transition: opacity 0.3s ease;
+    }
+
+    .personal-title-sub {
+        position: absolute;
+        z-index: 50;
+        left: 18.5%;
+        transform: translateX(-50%);
+        color: #000000;
+        top: 450px;
+        font-size: 50px;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        transition: opacity 0.3s ease;
+    }
+
+    .personal-awan-sense {
+        position: absolute;
+        top: 150px;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 1900px !important;
+        height: auto;
+        z-index: 2;
+    }
+
+
+    .personal-bunga-sense {
+        position: absolute;
+        top: 150px !important;
+        left: 810px !important;
+        width: 740px !important;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-bunga-kiri {
+        position: absolute;
+        z-index: 5;
+        width: 200px;
+        left: 11%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 750px;
+    }
+
+    .personal-water-one {
+        position: absolute;
+        z-index: 5;
+        width: 33px;
+        left: 6%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 923px;
+        animation: float 4.5s ease-in-out infinite;
+    }
+
+    .personal-water-two {
+        position: absolute;
+        z-index: 5;
+        width: 50px;
+        left: 92%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 800px;
+        animation: float 4.5s ease-in-out infinite;
+    }
+
+    .personal-water-three {
+        position: absolute;
+        z-index: 5;
+        width: 30px;
+        left: 6%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 2970px;
+        animation: float 4.5s ease-in-out infinite;
+    }
+
+    .personal-water-four {
+        position: absolute;
+        z-index: 5;
+        width: 40px;
+        left: 12%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 2880px;
+        animation: float 4.5s ease-in-out infinite;
+    }
+
+    .personal-bunga-kanan {
+        position: absolute;
+        z-index: 5;
+        width: 150px;
+        left: 90%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 1000px;
+    }
+
+
+    .personal-bgsingking-tengah {
+        position: absolute;
+        z-index: 3;
+        width: 1360px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 650px;
+    }
+
+    .personal-bgsingking-tengah-two {
+        position: absolute;
+        z-index: 3;
+        width: 1360px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        top: 1550px;
+    }
+
+    .personal-bgtitle-about {
+        position: absolute;
+        top: 900px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-img-atas {
+        position: absolute;
+        top: 1250px;
+        left: 71.5%;
+        transform: translateX(-50%);
+        width: 435px;
+        height: auto;
+        z-index: 10;
+    }
+
+
+    .personal-img-atas1 {
+        position: absolute;
+        top: 1540px;
+        left: 22.7%;
+        transform: translateX(-50%);
+        width: 230px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-img-atas2 {
+        position: absolute;
+        top: 1540px;
+        left: 40%;
+        transform: translateX(-50%);
+        width: 230px;
+        height: auto;
+        z-index: 10;
+    }
+
+
+    .personal-label-about {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffc647;
+        top: 3px;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        transition: opacity 0.3s ease;
+    }
+
+    .personal-label-villian {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffc647;
+        top: 9px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        transition: opacity 0.3s ease;
+    }
+
+    .personal-label-golden {
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffc647;
+        top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--font-libre-caslon), serif;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        transition: opacity 0.3s ease;
+    }
+
+
+    .personal-bintang-kanan {
+        position: absolute;
+        left: 90%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 23px;
+        height: auto;
+        z-index: 11;
+        pointer-events: none;
+    }
+
+    .personal-bintang-kiri {
+        position: absolute;
+        left: 10%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 23px;
+        height: auto;
+        z-index: 12;
+        pointer-events: none;
+    }
+
+
+    .personal-desc-about {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 980px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: var(--font-vend-sans), sans-serif;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .personal-bgtitle-villian {
+        position: absolute;
+        top: 1200px;
+        left: 22.7%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-desc-villian {
+        position: absolute;
+        left: 30%;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 1270px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: var(--font-vend-sans), sans-serif;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+
+    .personal-bgtitle-other {
+        position: absolute;
+        top: 3000px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-bgtitle-golden {
+        position: absolute;
+        top: 2100px;
+        left: 63% !important;
+        transform: translateX(-50%);
+        width: 250px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-dekorasi-tengah {
+        position: absolute;
+        top: 1750px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1420px;
+        height: auto;
+    }
+
+    .personal-bg-frame {
+        position: absolute;
+        top: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1380px;
+        height: auto;
+    }
+
+    .personal-tetasan-one {
+        position: absolute;
+        top: 1930px;
+        left: 11%;
+        transform: translateX(-50%);
+        width: 35px;
+        height: auto;
+        animation: ease-in-out float 4s infinite;
+    }
+
+    .bunga-img-full {
+        position: absolute;
+        top: 2700px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1450px;
+        height: auto;
+    }
+
+    .personal-tetasan-two {
+        position: absolute;
+        top: 2000px;
+        left: 7%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: auto;
+        animation: ease-in-out float 4.5s infinite;
+
+    }
+
+    .personal-img-full {
+        position: absolute;
+        top: 3000px;
+        left: 48%;
+        transform: translateX(-50%);
+        width: 1950px;
+        height: auto;
+        z-index: 9;
+    }
+
+    .personal-img-full1 {
+        position: absolute;
+        top: 3180px;
+        left: 24%;
+        transform: translateX(-50%);
+        width: 535px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-img-full2 {
+        position: absolute;
+        top: 3180px;
+        left: 58.4%;
+        transform: translateX(-50%);
+        width: 343px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-img-full3 {
+        position: absolute;
+        top: 3180px;
+        left: 84.4%;
+        transform: translateX(-50%);
+        width: 300px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-img-full4 {
+        position: absolute;
+        top: 3840px;
+        left: 34%;
+        transform: translateX(-50%);
+        width: 550px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-img-full5 {
+        position: absolute;
+        top: 3840px;
+        left: 74.3%;
+        transform: translateX(-50%);
+        width: 300px;
+        height: auto;
+        z-index: 10;
+    }
+
+
+    .personal-img-tengah {
+        position: absolute;
+        top: 2150px;
+        left: 30%;
+        transform: translateX(-50%);
+        width: 470px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-img-tengah1 {
+        position: absolute;
+        top: 2435px;
+        left: 62%;
+        transform: translateX(-50%);
+        width: 230px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-img-tengah2 {
+        position: absolute;
+        top: 2435px;
+        left: 79%;
+        transform: translateX(-50%);
+        width: 230px;
+        height: auto;
+        z-index: 10;
+    }
+
+    .personal-desc-golden {
+        position: absolute;
+        left: 70%;
+        transform: translateX(-50%);
+        color: #fff8e9;
+        top: 2170px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: var(--font-vend-sans), sans-serif;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+
+    .personal-background-bawah {
+        position: absolute;
+        inset: 0;
+        top: 4150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1360px;
+        height: auto;
+        z-index: 1;
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    .personal-footer-wrap {
+        position: absolute;
+        top: 1950px;
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .personal-full-bg {
+        height: 700vh;
+    }
+
+    .personal-main-content {
+        height: 700vh;
+        overflow: hidden;
+    }
+}
